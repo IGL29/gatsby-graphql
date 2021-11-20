@@ -1,8 +1,11 @@
 import * as React from "react"
-import PropTypes from "prop-types"
 import "./Layout.css"
 
-const Layout = ({ children }) => {
+interface ILayout {
+  children: React.ReactNode;
+}
+
+const Layout = ({ children }: ILayout): JSX.Element => {
   return (
     <main>
       <div className={'container'}>
@@ -10,10 +13,6 @@ const Layout = ({ children }) => {
       </div>
     </main>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout

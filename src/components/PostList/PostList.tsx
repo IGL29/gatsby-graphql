@@ -4,6 +4,7 @@ import * as React from "react"
 import './PostList.css';
 
 const PostList = ({ data }) => {
+  console.log(data);
   const { nodes } = data.allMarkdownRemark;
 
   return (
